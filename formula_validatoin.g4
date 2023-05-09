@@ -1,7 +1,7 @@
 grammar formula_validatoin;
 
 
-formula: (logic_constant|atomic_formula|complex_formula);
+formula: (logic_constant|atomic_formula |complex_formula);
 
 
 logic_constant: (LOGIC_ZERO|LOGIC_ONE);
@@ -15,6 +15,7 @@ bin_complex_formula: OPEN_CIR_BRACKET formula binary_connection formula CLOSE_CI
 
 binary_connection: CONJUNCTION|DISJUNCTION|IMPLICATION|EQUIVALENT;
 upper_alph: ('A'| 'B'| 'C'| 'D'| 'E'| 'F'| 'G'| 'H'| 'I'| 'J'|'K'| 'L'| 'M'| 'N'| 'O'| 'P'| 'Q'| 'R'| 'S'| 'T'|'U'| 'V'| 'W'| 'X'| 'Y'| 'Z');
+
 
 
 NEGATION: '!';
